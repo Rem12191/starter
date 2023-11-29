@@ -26,7 +26,7 @@ body {
         to right bottom,
         rgba(127, 214, 112, 0.808),
         rgba(39, 180, 133, 0.801) 
-    ), url(../img/hero.jpg);
+    ), url(../img/trucksbackground-1.png);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -54,6 +54,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primery {
@@ -61,6 +62,7 @@ body {
     text-transform: uppercase;
 
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .heading-primery-main {
@@ -122,4 +124,27 @@ body {
         transform: translate(0);
 
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
 }
