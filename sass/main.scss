@@ -160,6 +160,7 @@ body {
     position: relative;
     font-size: 1.6rem;
     }
+    
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
@@ -169,6 +170,7 @@ body {
             opacity: 0;
         }
     }
+
     &:active {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
@@ -195,11 +197,7 @@ body {
         z-index: -1;
         transition: all .4s;
     }
-    
-    
-    
-    
-    
+            
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
