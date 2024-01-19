@@ -1,4 +1,22 @@
-$color-primary: #55c57a;
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+
+@import "loyout/";
+
+@import "pages/home";
+
+
+
+
+$color-primary: #55c57a;s
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
@@ -148,59 +166,5 @@ body {
     }
 }
 
-.btn {
-    &:link,
-    &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-    font-size: 1.6rem;
-    }
-    
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-    }
-
-    &:active {
-        transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-    }
-    
-    &--white {
-        background-color: $color-white;
-        color: $color-grey-dark;
-
-        &:after {
-            background-color: $color-white;
-        }
-    }
-    
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position:absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-            
-    &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-    }
-}
 
