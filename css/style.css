@@ -218,6 +218,19 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+    /* Assuming you meant 2rem, not 20rem */
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -277,10 +290,11 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-6deg);
-  margin-top: -11rem; }
+  margin-top: -10rem; }
   .section-features > * {
-    transform: skewY(6deg); }
+    transform: skewY(7deg); }
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0; }
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
